@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "materials-investigator"
+version = "0.1.0"
+description = "A minimal persistent investigator agent for materials-style closed-loop investigations."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pydantic>=2.5",
+  "typer>=0.12",
+  "numpy>=1.24",
+  "pandas>=2.0",
+]
+
+[project.scripts]
+investigator = "investigator.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
