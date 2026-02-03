@@ -45,7 +45,10 @@ def run_cmd(
     )
 
     typer.echo(f"run_id: {run_id}")
-    typer.echo(f"db: {db}")
+
+
+if __name__ == "__main__":
+    app()
 
 
 @app.command("show")

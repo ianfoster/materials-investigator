@@ -1,0 +1,10 @@
+.claude/
+.venv/
+experiments/output
+runs/
+documents/paper.aux
+documents/paper.log
+documents/paper.out
+src/investigator/__pycache__/
+src/investigator/tools/__pycache__/
+src/materials_investigator.egg-info/
